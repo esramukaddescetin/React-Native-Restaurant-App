@@ -8,6 +8,13 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  logo: {
+    width: 250, // Logo genişliği
+    height: 250, // Logo yüksekliği
+    position: 'absolute',
+    top: 30, // Logo'nun üst kenardan uzaklığı
+    zIndex: 2,
+  },
   backgroundImage: {
     width: '100%',
     height: '100%',
@@ -15,6 +22,7 @@ export const styles = StyleSheet.create({
   },
   blurView: {
     ...StyleSheet.absoluteFillObject,
+    zIndex: 1, 
   },
   contentContainer: {
     flex: 1,
@@ -22,15 +30,15 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    fontSize: 90,
+    fontSize: 70,
     fontWeight: 'bold',
     color: '#fff',
     marginBottom: 10,
   },
   subTitle: {
-    fontSize: 18,
+    fontSize: 30,
     color: '#fff',
-    marginBottom: 20,
+    marginBottom: 140,
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
@@ -49,6 +57,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 30,
     marginVertical: 10,
     width: '80%', // Ekranın %80'ini kaplayacak şekilde genişlik
+    bottom: 50,
   },
   buttonText: {
     fontSize: 18,
