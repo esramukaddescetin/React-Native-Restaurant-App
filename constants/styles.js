@@ -1,5 +1,4 @@
 // styles.js
-import { Center } from 'native-base';
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
@@ -9,10 +8,10 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   logo: {
-    width: 250, // Logo genişliği
-    height: 250, // Logo yüksekliği
+    width: 250,
+    height: 250,
     position: 'absolute',
-    top: 30, // Logo'nun üst kenardan uzaklığı
+    top: 30,
     zIndex: 2,
   },
   backgroundImage: {
@@ -22,23 +21,20 @@ export const styles = StyleSheet.create({
   },
   blurView: {
     ...StyleSheet.absoluteFillObject,
-    zIndex: 1, 
+    zIndex: 1,
   },
   contentContainer: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  title: {
-    fontSize: 70,
-    fontWeight: 'bold',
-    color: '#fff',
-    marginBottom: 10,
+    zIndex: 2, // Bu satırı ekledik
   },
   subTitle: {
     fontSize: 30,
     color: '#fff',
-    marginBottom: 140,
+    marginBottom: 110,
+    textAlign: 'center',
+    zIndex: 2, // Bu satırı ekledik
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
@@ -46,9 +42,10 @@ export const styles = StyleSheet.create({
   },
   navBar: {
     position: 'absolute',
-    bottom: 20, // Alt kenardan bosluk
+    bottom: 20,
     alignItems: 'center',
     width: '100%',
+    zIndex: 2, // Bu satır eklendi
   },
   button: {
     backgroundColor: 'rgba(255, 255, 255, 0.7)',
@@ -56,8 +53,7 @@ export const styles = StyleSheet.create({
     paddingVertical: 40,
     paddingHorizontal: 30,
     marginVertical: 10,
-    width: '80%', // Ekranın %80'ini kaplayacak şekilde genişlik
-    bottom: 50,
+    width: '80%',
   },
   buttonText: {
     fontSize: 18,
