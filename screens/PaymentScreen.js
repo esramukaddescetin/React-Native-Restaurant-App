@@ -1,4 +1,4 @@
-// PaymentScreen.js
+
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
@@ -8,11 +8,7 @@ const PaymentScreen = ({ navigation }) => {
   const [securityCode, setSecurityCode] = useState('');
 
   const handlePayment = () => {
-    // Ödeme bilgilerini kullanarak ödeme işlemlerini gerçekleştir
-    // Burada ödeme işlemleri veya API çağrıları gibi işlemleri yapabilirsiniz.
     console.log('Payment processed successfully!');
-    // Ödeme işlemi tamamlandıktan sonra isteğe bağlı olarak başka bir ekrana yönlendirme yapabilirsiniz.
-    // Örneğin, ana ekrana dönmek için: navigation.navigate('Home');
   };
 
   return (

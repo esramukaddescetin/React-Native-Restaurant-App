@@ -1,13 +1,13 @@
-// App.js
+
 import React from 'react';
 import { View, Image, Text, TouchableOpacity } from 'react-native';
 import { BlurView } from '@react-native-community/blur';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { useNavigation } from '@react-navigation/native';
-import MenuScreen from './MenuScreen.js'; // Import your MenuScreen component
-import FastRequestsScreen from './FastRequestsScreen.js'; // Import your FastRequestsScreen component
-import PaymentScreen from './PaymentScreen.js'; // Import your PaymentScreen component
+import MenuScreen from './MenuScreen.js';
+import FastRequestsScreen from './FastRequestsScreen.js'; 
+import PaymentScreen from './PaymentScreen.js'; 
 import { styles } from '../constants/styles.js';
 
 const Stack = createStackNavigator();
@@ -28,7 +28,7 @@ const HomeScreen = () => {
 
       <View style={styles.navBar}>
 
-        {/* Yeni eklenen buton */}
+    
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('Menu')}
@@ -36,7 +36,7 @@ const HomeScreen = () => {
           <Text style={styles.buttonText}>Menu</Text>
         </TouchableOpacity>
 
-        {/* Fast Requests sayfasına navigate etmek için eklenen buton */}
+      
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('FastRequests')}
@@ -44,7 +44,7 @@ const HomeScreen = () => {
           <Text style={styles.buttonText}>Fast Requests</Text>
         </TouchableOpacity>
 
-        {/* Payment sayfasına navigate etmek için eklenen buton */}
+       
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('Payment')}

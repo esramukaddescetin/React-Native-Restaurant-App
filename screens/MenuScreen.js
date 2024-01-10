@@ -1,4 +1,4 @@
-// MenuScreen.js
+
 import React, { useState } from 'react';
 import { View, Text, FlatList, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
@@ -12,7 +12,7 @@ const MenuScreen = () => {
     { id: 4, name: 'Spaghetti Bolognese', description: 'Classic Italian pasta with meat sauce', image: require('../assets/image/bolognese.jpg') },
     { id: 5, name: 'Margherita Pizza', description: 'Tomato, mozzarella, and basil', image: require('../assets/image/pizza.jpg') },
     { id: 6, name: 'Caesar Salad', description: 'Romaine lettuce, croutons, Parmesan cheese, and Caesar dressing', image: require('../assets/image/caesar.jpg') },
-    // ... Add more items as needed
+ 
   ];
 
   const addToCart = (item) => {

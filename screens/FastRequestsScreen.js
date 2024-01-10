@@ -1,11 +1,9 @@
-// RequestsScreen.js
+
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
 const RequestsScreen = () => {
   const handleRequest = (requestType) => {
-    // Burada her bir butona tıklandığında gerçekleşecek işlemleri ekleyebilirsin.
-    // Örneğin, bir bildirim gönderebilir veya ilgili işlemleri başlatabilirsin.
     console.log(`Request received: ${requestType}`);
   };
 
