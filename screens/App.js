@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { useNavigation } from '@react-navigation/native';
 import MenuScreen from './MenuScreen.js'; // Import your MenuScreen component
 import FastRequestsScreen from './FastRequestsScreen.js'; // Import your FastRequestsScreen component
+import PaymentScreen from './PaymentScreen.js'; // Import your PaymentScreen component
 import { styles } from '../constants/styles.js';
 
 const Stack = createStackNavigator();
@@ -43,7 +44,11 @@ const HomeScreen = () => {
           <Text style={styles.buttonText}>Fast Requests</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button}>
+        {/* Payment sayfasına navigate etmek için eklenen buton */}
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate('Payment')}
+        >
           <Text style={styles.buttonText}>Payment</Text>
         </TouchableOpacity>
 
@@ -59,6 +64,7 @@ const App = () => {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Menu" component={MenuScreen} />
         <Stack.Screen name="FastRequests" component={FastRequestsScreen} />
+        <Stack.Screen name="Payment" component={PaymentScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
